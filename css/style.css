@@ -1,0 +1,9 @@
+:root {
+    --fonte-principal: "Inria Sans", sans-serif;
+    --peso-alto: bold;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-weight: var(--peso-alto);
+}
