@@ -1,9 +1,28 @@
 :root {
     --fonte-principal: "Inria Sans", sans-serif;
     --peso-alto: bold;
+    --cor--principal: black;
+    --cor-secundaria: white;
+    --cor--terciaria: orange;
+    --cor-quarta: #262626;
 }
 
 body {
     font-family: var(--fonte-principal);
     font-weight: var(--peso-alto);
+    margin: 0;
+    padding: 0;
+}
+
+body ul li {
+    list-style-type: none;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.navegacao {
+    background-color: var(--cor-quarta);
 }
