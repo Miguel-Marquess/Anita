@@ -86,3 +86,12 @@ body ul li {
     display: flex;
     align-items: center;
 }
+.WHEY {
+    color: var(--cor--terciaria);
+    display: flex;
+    bottom: unset;
+}
+.CREATINA {
+    color: var(--cor--terciaria);
+    display: flex;
+}
