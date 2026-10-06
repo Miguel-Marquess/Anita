@@ -7,11 +7,15 @@
     --cor-quarta: #262626;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--fonte-principal);
     font-weight: var(--peso-alto);
-    margin: 0;
-    padding: 0;
 }
 
 body ul li {
@@ -21,8 +25,64 @@ body ul li {
 .logo {
     height: 100px;
     width: 100px;
+    display: block;
+}
+
+.usuario {
+    height: 25px;
+    width: 25px;
+    display: block;
 }
 
 .navegacao {
     background-color: var(--cor-quarta);
+    padding: 0 20px;
+}
+
+.navegacao ul {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%;
+}
+
+
+.navegacao ul > div { /* pegue todas as divs de ul que tem a classe navegacao */
+    display: flex;
+    align-items: center;
+    gap: 20px;                    
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+
+.usuario-actions {
+    display: flex;
+    align-items: center;          
+    gap: 15px;              
+}
+
+
+.buscar {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    height: 35px;
+    border-radius: 10px;
+    padding: 0 5px 0 10px;
+}
+
+.buscar input {
+    border: none;
+    outline: none;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.usuario-actions a {
+    display: flex;
+    align-items: center;
 }
